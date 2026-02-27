@@ -82,3 +82,22 @@ sections.forEach(section => {
     section.style.transition = "all 0.6s ease";
     observer.observe(section);
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("mail").value;
+  const message = document.getElementById("msg").value;
+
+  const ownerEmail = "mastermindsdji@gmail.com";
+
+  const subject = encodeURIComponent("New Contact Form Message");
+  const body = encodeURIComponent(
+    "Name: " + name + "\n" +
+    "Email: " + email + "\n\n" +
+    "Message:\n" + message
+  );
+
+  window.location.href = `mailto:${ownerEmail}?subject=${subject}&body=${body}`;
+});

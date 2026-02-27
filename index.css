@@ -51,6 +51,11 @@ nav a {
     font-weight: 500;
 }
 
+.footer-grid a, .hero a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 nav a:hover {
     color: #2563eb;
 }

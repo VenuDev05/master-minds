@@ -16,7 +16,7 @@
 
     <header>
         <div class="container nav-container">
-            <div class="logo">Master Mind Education</div>
+            <div class="logo">Master Mind</div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -37,8 +37,8 @@
                     that help organizations grow faster and operate smarter.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Talk to Us</button>
-                    <button class="btn-outline">Our Solutions</button>
+                    <button class="btn-primary"><a href="#contact">Talk to Us</a></button>
+                    <button class="btn-outline"><a href="#products" style="color: blue;">Our Solutions</a></button>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@
     <!-- ABOUT -->
     <section class="section light" id="about">
         <div class="container narrow">
-            <h2>About Master Mind Education</h2>
+            <h2>About</h2>
             <p>
                 Master Mind Education is a product-based software company that builds modern Android and web
                 applications, enterprise platforms, and scalable digital products. We focus on innovation, performance,
@@ -126,10 +126,10 @@
             <h2>Contact Us</h2>
 
             <form class="contact-form">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-primary">Submit</button>
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="email" placeholder="Email Address" id="mail" required>
+                <textarea placeholder="Your Message" id="msg" required></textarea>
+                <button type="submit" class="btn-primary" id="send">Submit</button>
             </form>
         </div>
     </section>
@@ -137,21 +137,24 @@
     <footer>
         <div class="container footer-grid">
             <div>
-                <h3>Master Mind Education</h3>
-                <p>Delivering enterprise-grade digital solutions.</p>
+                <h3>Master Mind</h3>
+                <p>Delivering Modern Applications.</p>
             </div>
 
             <div>
                 <h4>Company</h4>
-                <p>About</p>
-                <p>Services</p>
-                <p>Careers</p>
+                <a href="#about">
+                    <p>About</p>
+                </a>
+                <a href="#services">
+                    <p>Services</p>
+                </a>
+                <a href="#products">Works</a>
             </div>
 
             <div>
                 <h4>Contact</h4>
-                <p>info@mastermindeducation.com</p>
-                <p>+91 98765 43210</p>
+                <p>Gmail : mastermindsdji@gmail.com</p>
             </div>
         </div>
 
