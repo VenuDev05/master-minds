@@ -152,6 +152,11 @@ nav a:hover {
 
 /* Cards */
 .card {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: white;
     padding: 30px;
     border-radius: 8px;
@@ -222,4 +227,25 @@ footer p {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.playstore-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.playstore-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.playstore-btn:active {
+  transform: scale(0.98);
 }

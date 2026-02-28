@@ -1,6 +1,4 @@
-// =============================
-// 1. Smooth Scroll for Nav Links
-// =============================
+
 document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -16,9 +14,7 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 
-// =============================
-// 2. Sticky Header Shadow on Scroll
-// =============================
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -30,9 +26,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-// =============================
-// 3. Contact Form Validation
-// =============================
+
 const form = document.querySelector(".contact-form");
 
 form.addEventListener("submit", function(e) {
@@ -62,9 +56,7 @@ function validateEmail(email) {
 }
 
 
-// =============================
-// 4. Simple Fade-in on Scroll (Subtle)
-// =============================
+
 const sections = document.querySelectorAll(".section");
 
 const observer = new IntersectionObserver(entries => {
